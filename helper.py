@@ -4,8 +4,11 @@ import sys
 import os
 
 def ints(string):
-    return [*map(int, re.findall(r'\d+', string))]
-    
+    return list(map(int, re.findall(r"-?[0-9]+", string)))
+
+def readfile():
+    with open("data.txt","r") as f:
+        return f.read()
     
     
 if __name__ == "__main__":
