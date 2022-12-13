@@ -26,7 +26,7 @@ def compare(a, b):
 def part1(data):
     pairs = [[ast.literal_eval(x) for x in pair.split('\n')] for pair in data]
     ids = [i+1 for i,(a,b) in enumerate(pairs) if compare(a,b) < 0 ]
-    return sum(ids)
+    return np.sum(ids)
     
 def part2(data):
     data = filter(lambda x: x, data + ['[[2]]', '[[6]]'])
