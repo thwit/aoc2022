@@ -9,6 +9,13 @@ def ints(string):
 def readfile():
     with open("data.txt","r") as f:
         return f.read()
+        
+def signum(x):
+    if x < 0:
+        return -1
+    if x > 0:
+        return 1
+    return 0
     
     
 if __name__ == "__main__":
