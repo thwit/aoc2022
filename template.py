@@ -20,5 +20,5 @@ print(answer_a)
 print(answer_b)
 
 
-#aocd.submit(answer_a, part='A', day=day year=2022)
-#aocd.submit(answer_b, part='B', day=day year=2022)
+#aocd.submit(answer_a, part='A', day=day, year=2022)
+#aocd.submit(answer_b, part='B', day=day, year=2022)
