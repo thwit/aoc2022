@@ -15,8 +15,6 @@ def evaluate(monkeys, m='root'):
     right = monkeys[m].get('b', None)
     num = monkeys[m].get('n', None)
     
-    #print(monkeys[m])
-    
     if num is not None:
         return num
     
@@ -56,9 +54,12 @@ def part2(data):
         else:
             num = int(rest)
             monkeys[mnk] = {'n': num}
+            
+    # part 1
+    # return evaluat(monkeys)
     
     upper = 10000000000000000
-    lower = -1000000000000
+    lower = 0
     
     b = evaluate(monkeys, monkeys['root']['b'])
     
@@ -75,7 +76,7 @@ def part2(data):
                 break
             lower = k
         elif a - b < 0:
-            upper = 
+            upper = k
         
     return monkeys['humn']['n']
 
